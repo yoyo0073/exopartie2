@@ -89,29 +89,7 @@ int main()
         }while (motUtilisateur != motMystere && nbrEssai > 0); // On recommence tant qu'il n'a pas trouvé et si le nombre d'essai est au dessus de zéro
 
 
-        //**************proposition pour rejouer******************
-        bool rejouerReponseObtenue = false;
-        while(!rejouerReponseObtenue)
-        {
-            //on récupère la réponse si on veux continuer
-            cout << "Voulez vous rejouer ? o pour oui ou n pour non" << endl;
-            char reponse;
-            cin >> reponse;
-            switch(reponse)
-            {
-                case 'o'://oui
-                    rejouerReponseObtenue = true;
-                    cout << "Super on va rejouer !" << endl;
-                break;
-                case 'n'://non
-                    rejouerReponseObtenue = true;
-                    continuer = false;
-                    cout << "Snif... d'accord au revoir..." << endl;
-                break;
-                default://autre réponse
-                    cout << "Je n'est pas comprie votre reponse !" << endl;
-            }
-        }
+     
 
     }while (continuer);//On vérifie si on rejoue a la partie !
 
